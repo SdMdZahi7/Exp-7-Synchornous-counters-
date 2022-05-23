@@ -78,7 +78,10 @@ counter_up<=counter_up+4'd1;
 end
 assign counter=counter_up;
 endmodule
+~~~
+
 # DOWN COUNTER:
+~~~
 module dc(input CLK,input reset,output[0:3]counter);
 reg[0:3]counter_down;
 always@(posedge CLK or posedge reset)
